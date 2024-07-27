@@ -1,0 +1,178 @@
+/* Base styles */
+.navbar {
+  background-color: #402cc2;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  height: 80px;
+  width: auto;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 10px;
+  cursor: pointer;
+  display: none;
+  position: relative;
+}
+
+.menu-icon {
+  transition: all 0.3s ease;
+}
+
+.menu-toggle.close-icon .menu-icon {
+  display: none;
+}
+
+.menu-toggle.close-icon::before {
+  content: "✖";
+  font-size: 40px;
+  color: #fff;
+  position: absolute;
+  top: -200px;
+  right: 5px;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-list li {
+  margin: 0 15px;
+}
+
+.menu-list a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+/* Media queries for responsiveness */
+
+/* Mobile screens (smallest devices) */
+@media (max-width: 576px) {
+  .navbar {
+    padding: 8px 16px;
+  }
+
+  .logo-image {
+    height: 50px; /* Adjust the logo height for mobile */
+    padding-left: -20px;
+    /* margin: 0px 30px; */
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu-list {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-list li {
+    margin: 0;
+  }
+
+  .menu-list a {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+  }
+}
+
+/* Tablets and small desktops */
+@media (min-width: 577px) and (max-width: 992px) {
+  .navbar {
+    padding: 10px 20px;
+    width: 100%;
+  }
+
+  .logo-image {
+    height: 35px;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .menu-list {
+    flex-direction: row;
+  }
+
+  .menu-list li {
+    margin: 0 10px;
+    font-size: x-small;
+  }
+
+  .menu-list a {
+    padding: 10px;
+  }
+}
+
+/* Large desktops and above */
+@media (min-width: 993px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .logo-image {
+    height: 60px;
+    padding-left: 30px;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu-list {
+    flex-direction: row;
+  }
+
+  .menu-list li {
+    margin: 0 15px;
+  }
+
+  .menu-list a {
+    padding: 10px;
+  }
+}

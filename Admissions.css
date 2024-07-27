@@ -1,0 +1,68 @@
+/* Admissions.css */
+.admissions {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #3498db;
+  font-size: 1.75rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+p {
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #34495e;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.important-dates ul {
+  padding-left: 0;
+}
+
+.important-dates li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.important-dates li::before {
+  content: "•";
+  color: #3498db;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}

@@ -1,0 +1,270 @@
+/* Home.css */
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #d5eeff;
+}
+
+/* Container for the entire Home component */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d5eeff;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 3em;
+  color: #ff895d;
+}
+
+.logo1 {
+  margin-top: 20px;
+  width: 250px;
+  height: auto;
+}
+
+/* Introduction Styles */
+.introduction {
+  max-width: 1300px;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.introduction h1 {
+  font-size: 2em;
+  color: #ff895d;
+}
+
+.introduction p {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Carousel Styles */
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.carousel-item {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 15px;
+  max-width: 1300px;
+  width: 100%;
+}
+
+.carousel-item h1 {
+  font-size: 1.5em;
+  color: #007cb9;
+  margin-bottom: 10px;
+}
+
+.carousel-item p {
+  margin: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+.carousel-images {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Ensure images are spaced out evenly */
+}
+
+.carousel-image {
+  width: calc(50% - 10px); /* Two images per row, adjusted for spacing */
+  height: 300px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Responsive Styles */
+
+/* Small screens (phones, 576px and below) */
+@media (max-width: 576px) {
+  .carousel-item {
+    width: 100%; /* Full width for carousel items */
+    padding: 10px; /* Padding inside carousel items */
+    box-sizing: border-box; /* Include padding in width calculation */
+    background-color: white; /* Ensure background color is applied */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for distinction */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 10px; /* Space between items */
+  }
+
+  .carousel-image {
+    width: 150px; /* Fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure images display properly */
+    margin: 0 auto; /* Center images within carousel items */
+    padding: 5px; /* Padding around images */
+  }
+
+  .header h1 {
+    font-size: 1.5em; /* Reduced font size for header */
+  }
+
+  .logo1 {
+    width: 100px; /* Further adjusted logo size for small screens */
+  }
+
+  .introduction {
+    padding: 10px; /* Padding around introduction section */
+    width: 100%; /* Full width for introduction section */
+    height: auto; /* Adjust height based on content */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  .introduction h1 {
+    font-size: 1.2em; /* Font size for headings in the introduction */
+  }
+
+  .introduction p {
+    padding: 10px; /* Padding inside paragraphs */
+    margin: 0; /* Remove default margin */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  .carousel-image1 {
+    width: 150px; /* Fixed width for carousel images */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure images display properly */
+    margin: 0 auto; /* Center images within carousel items */
+  }
+}
+
+/* Medium screens (tablets, 768px and below) */
+@media (max-width: 768px) {
+  .carousel-image {
+    width: 500px; /* Fixed width for images */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .header h1 {
+    font-size: 2em; /* Adjusted font size for header on medium screens */
+  }
+
+  .logo1 {
+    width: 150px; /* Adjusted logo size for medium screens */
+  }
+
+  .introduction h1 {
+    font-size: 1.5em; /* Adjusted font size for headings in the introduction */
+  }
+
+  .introduction {
+    padding: 10px; /* Padding around introduction section */
+    width: 100%; /* Full width for the introduction section */
+    height: auto; /* Auto height to fit content */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  .introduction p {
+    padding: 10px; /* Padding inside paragraphs */
+    margin: 0; /* Remove default margin */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  .carousel-image1 {
+    width: 100%; /* Fixed width for carousel images */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+/* Large screens (desktops, 1024px and above) */
+@media (min-width: 1024px) {
+  .carousel-image {
+    width: 300px; /* Larger width for images */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .header h1 {
+    font-size: 3em; /* Larger font size for header on large screens */
+  }
+
+  .logo1 {
+    width: 250px; /* Larger logo size for large screens */
+  }
+
+  .introduction h1 {
+    font-size: 2em; /* Larger font size for headings in the introduction */
+  }
+
+  .introduction {
+    padding: 20px; /* Increased padding around introduction section */
+    width: 100%; /* Full width for the introduction section */
+    height: auto; /* Auto height to fit content */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  .introduction p {
+    padding: 15px; /* Increased padding inside paragraphs */
+    margin: 0; /* Remove default margin */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+
+  .carousel-image1 {
+    width: 100%;
+    /*Largerwidthforcarouselimages*/
+    height: auto;
+    /*Maintainaspectratio*/
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+  }
+
+  /* Adjust card size for large screens */
+  .card {
+    width: 300px; /* Larger card width */
+    height: auto; /* Auto height to fit content */
+    padding: 20px; /* Padding inside cards */
+    margin: 15px; /* Margin around cards */
+    box-sizing: border-box; /* Include padding and border in width/height calculation */
+  }
+}
+@media (min-width: 577px) {
+  .carousel-image1 {
+    width: 100%;
+    /*Largerwidthforcarouselimages*/
+    height: auto;
+  }
+  .carousel-item {
+    padding: 15px; /* Increased padding inside paragraphs */
+    margin: 0; /* Remove default margin */
+    box-sizing: border-box;
+  }
+}
